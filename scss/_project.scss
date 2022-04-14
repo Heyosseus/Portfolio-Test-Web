@@ -34,8 +34,10 @@
         overflow: hidden;
         cursor: pointer;
         border-radius: 8px;
+
         &:hover{
             transform: scale(0.99);
+            
         }
         
 
@@ -56,7 +58,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
+        opacity: 0;
         
+        &:hover{
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
     
     }
 
